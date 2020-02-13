@@ -2,14 +2,13 @@
 //
 // In this file, we'll be kicking off our app or storybook.
 
-import "./i18n"
-import React, { useState, useEffect } from "react"
-import { AppRegistry, YellowBox } from "react-native"
-import { StatefulNavigator, BackButtonHandler, exitRoutes } from "./navigation"
-import { RootStore, RootStoreProvider, setupRootStore } from "./models/root-store"
-
 import { contains } from "ramda"
+import React, { useEffect, useState } from "react"
+import { AppRegistry, YellowBox } from "react-native"
 import { enableScreens } from "react-native-screens"
+import "./i18n"
+import { RootStore, RootStoreProvider, setupRootStore } from "./models/root-store"
+import { BackButtonHandler, exitRoutes, StatefulNavigator } from "./navigation"
 
 // This puts screens in a native ViewController or Activity. If you want fully native
 // stack navigation, use `createNativeStackNavigator` in place of `createStackNavigator`:
@@ -84,7 +83,7 @@ const APP_NAME = "PaperTesla"
 
 // Should we show storybook instead of our app?
 //
-// ⚠️ Leave this as `false` when checking into git.
+// Leave this as `false` when checking into git.
 const SHOW_STORYBOOK = false
 
 let RootComponent = App

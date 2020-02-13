@@ -1,5 +1,5 @@
 import * as React from "react"
-import { View, Image, ViewStyle, TextStyle, ImageStyle, SafeAreaView } from "react-native"
+import { Image, ImageStyle, SafeAreaView, TextStyle, View, ViewStyle } from "react-native"
 import { NavigationInjectedProps } from "react-navigation"
 import { Button, Header, Screen, Text, Wallpaper } from "../../components"
 import { color, spacing } from "../../theme"
@@ -77,7 +77,7 @@ const FOOTER_CONTENT: ViewStyle = {
 export interface WelcomeScreenProps extends NavigationInjectedProps<{}> {}
 
 export const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = props => {
-  const nextScreen = React.useMemo(() => () => props.navigation.navigate("demo"), [
+  const nextScreen = React.useMemo(() => () => props.navigation.navigate("bledebug"), [
     props.navigation,
   ])
 

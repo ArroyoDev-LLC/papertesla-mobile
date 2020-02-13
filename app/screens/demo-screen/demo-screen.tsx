@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Image, ImageStyle, Platform, TextStyle, View, ViewStyle } from "react-native"
 import { NavigationInjectedProps } from "react-navigation"
-import { BulletItem, Button, Header, Text, Screen, Wallpaper } from "../../components"
-import { color, spacing } from "../../theme"
+import { BulletItem, Button, Header, Screen, Text, Wallpaper } from "../../components"
 import { Api } from "../../services/api"
+import { color, spacing } from "../../theme"
 import { save } from "../../utils/storage"
 export const logoIgnite = require("./logo-ignite.png")
 export const heart = require("./heart.png")
@@ -99,7 +99,9 @@ export const DemoScreen: React.FunctionComponent<DemoScreenProps> = props => {
               },
             },
           },
-          functionNames: function hello() { /* dummy function */ },
+          functionNames: function hello() {
+            /* dummy function */
+          },
         },
         preview: "More control with display()",
         important: true,

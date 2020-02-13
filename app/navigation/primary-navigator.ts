@@ -1,13 +1,10 @@
 import createNativeStackNavigator from "react-native-screens/createNativeStackNavigator"
-import {
-  WelcomeScreen,
-  DemoScreen,
-} from "../screens"
+import { BleDebugScreen, WelcomeScreen } from "../screens"
 
 export const PrimaryNavigator = createNativeStackNavigator(
   {
     welcome: { screen: WelcomeScreen },
-    demo: { screen: DemoScreen },
+    bledebug: { screen: BleDebugScreen },
   },
   {
     headerMode: "none",
